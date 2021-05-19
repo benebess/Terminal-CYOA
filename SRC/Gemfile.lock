@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    asciiart (0.0.7)
+      rainbow
+      rmagick
+    json (2.5.1)
+    rainbow (3.0.0)
+    rmagick (4.2.2)
+    word_wrap (1.0.0)
+
+PLATFORMS
+  x86_64-darwin-19
+
+DEPENDENCIES
+  asciiart (~> 0.0.7)
+  json (~> 2.5, >= 2.5.1)
+  rainbow (~> 3.0)
+  word_wrap (~> 1.0)
+
+BUNDLED WITH
+   2.2.17
