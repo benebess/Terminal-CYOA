@@ -1,5 +1,5 @@
 require_relative 'list'
-require_relative 'story'
+require_relative 'story.rb'
 
 
 a = Artii::Base.new
