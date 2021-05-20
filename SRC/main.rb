@@ -1,6 +1,6 @@
 require_relative 'list'
 require_relative 'story.rb'
-
+require_relative 'anim.rb'
 
 a = Artii::Base.new
 a.asciify('word')
@@ -23,11 +23,11 @@ puts "Alright, #{name}, nice to meet you! Let's get started!".magenta
 
 puts "..."
 
-puts Rainbow("It was a cold, dark night... 
+anim("It was a cold, dark night... 
 A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
 Following instructions scrawled across a ripped piece of paper, given to #{pronoun} by a colleague, #{name} walks down a seemingly quiet and unsuspecting street... 
-In the distance, a figure is seen, illuminated by the street lights behind them...").lightcoral
-
+In the distance, a figure is seen, illuminated by the street lights behind them...")
+puts Rainbow("------------------").lightcoral
 
 prompt = TTY::Prompt.new
 option = prompt.select("*What would you like to do?") do |menu|
