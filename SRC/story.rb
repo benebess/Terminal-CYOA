@@ -242,14 +242,12 @@ end
 
 module Pt4ch41
     def self.text(name, pronoun)
-        puts anim("#{name} walks carefully towards the warehouse, trying to make small steps incase of any rogue man holes that may be lurking... 
-        #{name} inches closer and closer to the warehouse, arms out in front of #{pronoun} awkwardly pawing at the air. 
-        Making out the silouhette of the warehouse #{name} estimates it must be about 100 meters away at this point... 
-        Almost at the warehouse, #{name} is pulled back as something catches the sleeve of #{pronoun} coat and yanks them back, 
-        they fall and desperately pull at their sleeve to try to release the coat from whatever it is caught on... 
-        One final pull and something rumbles, the coat was caught on a metal screw of a rickety old water tank, 
-        the final yank causes it to topple over and crush #{name}. 
-        #{name} HAS DIED. ")
+        puts anim("#{name} decides the man probably knows what he is talking about, and follows the left street. 
+            The man hobbles along beside #{name}, still remeniscing about his life, 
+            the road winds down for what feels like a long time...
+            #{name} asks the man if he notices anything familiar around the area but the man appears not to hear them and continues with his story... 
+            not wanting to be rude #{name} continues to listen to the man as they walk straight off the edge of a cliff. 
+            #{name} HAS DIED. ")
         puts Rainbow("-------------------------").lightcoral
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
         print a.to_ascii_art(width: 50).red
