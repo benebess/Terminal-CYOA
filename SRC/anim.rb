@@ -1,3 +1,5 @@
+#typewriter effect animation effect
+
 def anim(string)
     string.each_char do |n|
         print n

@@ -1,5 +1,6 @@
 require_relative 'list.rb'
 require_relative 'anim'
+require_relative 'asciitext'
 
 
 # this module presents when the user selects "escape down the manhole to your right?"
@@ -413,6 +414,7 @@ module Pt5ch52
         text = text_pt5ch52(name, pronoun)
         puts text
         puts Rainbow("-------------------------").lightcoral
+        puts congrats
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/winner.png")
         print a.to_ascii_art(width: 50)
         prompt = TTY::Prompt.new

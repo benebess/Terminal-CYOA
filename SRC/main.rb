@@ -1,7 +1,7 @@
 require_relative 'list'
 require_relative 'story.rb'
 require_relative 'anim.rb'
-require_relative 'title'
+require_relative 'asciitext'
 
 class Beginning
 
@@ -11,7 +11,7 @@ class Beginning
         #calls title from title.rb
         puts title
         #game instructions
-        puts "HOW TO PLAY:".colorize(:color => :white, :background => :light_red)
+        puts "HOW TO PLAY:".colorize(:color => :white, :background => :red)
         puts Rainbow("Welcome to TRY NOT TO DIE ... This is a story based game in which YOU, yes you, choose your own fate. 
         Follow through the story and try to navigate to the end without dying! Please note that this game works best in full screen! ").lightcoral
         puts " .... ".red
