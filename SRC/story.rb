@@ -2,12 +2,50 @@ require_relative 'list.rb'
 require_relative 'anim'
 require_relative 'asciitext'
 
+#this module presents when start over is selected
+
+module Startover
+
+    def self.text_startover(name, pronoun)
+        anim("\n 
+            It was a cold, dark night... 
+            A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
+            Following instructions scrawled across a ripped piece of paper, given to #{pronoun} by a colleague, #{name} walks down a seemingly quiet and unsuspecting street... 
+            In the distance, a figure is seen, illuminated by the street lights behind them...")
+            #divider
+            puts Rainbow("------------------").lightcoral
+            #tty-prompt choices to continue story
+            prompt = TTY::Prompt.new
+            option = prompt.select("*What would you like to do?") do |menu|
+                menu.choice "escape down the manhole to your right?"
+                menu.choice "run towards the figure?"
+                menu.choice "cut through the park, it's dark but atleast it's not that weird figure"
+                menu.choice "exit the game"
+            #prompt select end
+            end
+        #prompt select directions
+        if option == "escape down the manhole to your right?"
+            puts Pt1ch1.text_pt1ch1(name, pronoun)
+            Pt1ch1.text(name, pronoun)
+        elsif option == "run towards the figure?"
+            puts Pt1ch2.text_pt1ch2(name, pronoun)
+            Pt1ch2.text(name, pronoun)
+        elsif option == "cut through the park, it's dark but atleast it's not that weird figure"
+            puts Pt1ch3.text_pt1ch3(name, pronoun)
+            Pt1ch3.text(name, pronoun)
+        else option == "exit the game"
+            return
+        # if/elsif end      
+        end
+    end
+end
 
 # this module presents when the user selects "escape down the manhole to your right?"
 module Pt1ch1
 
     def self.text_pt1ch1(name, pronoun)
-        return anim("#{name} pulls the lid off the manhole and fumbles for the ladder, 
+        return anim("\n
+        #{name} pulls the lid off the manhole and fumbles for the ladder, 
         the brisk air has made #{name}'s hands cold and they fail to get a good grip, 
         slipping and falling for what seems like hours... 
         then the cold harsh slam of #{name}'s body echoes through the quiet streets above. 
@@ -26,8 +64,7 @@ module Pt1ch1
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -39,7 +76,8 @@ end
 module Pt1ch2
 
     def self.text_pt1ch2(name, pronoun)
-        return anim("#{name} has never been one to back down, picking up the pace they run directly towards the figure, 
+        return anim("\n
+        #{name} has never been one to back down, picking up the pace they run directly towards the figure, 
         the air bites at #{pronoun} cheeks but it doesn't slow them down. 
         The figure stops and watches as #{name} gets closer, hauntingly un-moved by #{name} running toward them... 
         As #{name} makes it within a few meters of the figure, #{name} can now see that it is an old man... 
@@ -80,7 +118,8 @@ end
 module Pt1ch3
 
     def self.text_pt1ch3(name, pronoun)
-        return anim("Looking around,  #{name} see's a park to #{pronoun} left, 
+        return anim("\n
+            Looking around,  #{name} see's a park to #{pronoun} left, 
             it's dark and the trees seem almost alive, but it seems better then the unknown at the end of the street.
             #{name} runs into the park and down the cobblestone pathway... 
             the park is quiet except for the rustle of the trees, and the odd hoot of an owl... 
@@ -119,7 +158,8 @@ end
 module Pt2ch21
     
     def self.text_pt2ch21(name, pronoun)
-        return anim("#{name} smiles at the old man, gesturing to #{pronoun} paper, and says 'Of course, I'm going the same way'. 
+        return anim("\n
+        #{name} smiles at the old man, gesturing to #{pronoun} paper, and says 'Of course, I'm going the same way'. 
         The old man smiles back at #{name}. Walking down the street the man tells #{name} vague stories from his life as #{name} listens intently, 
         the time seems to pass quicker now that #{name} has company and the brisk air doesn't feel as cold anymore... 
         Soon there comes a fork in the road, looking down at the piece of paper #{name} looks puzzled. 
@@ -150,7 +190,8 @@ end
 module Pt2ch22
     
     def text_pt2ch22(name, pronoun)
-        return anim("The man watches you walk away, a sad look in his eyes. 
+        return anim("\n
+            The man watches you walk away, a sad look in his eyes. 
             #{name} turns away and continues down the street... 
             out of nowhere a car appears and slams into #{name}. 
             Thrown far from the road #{name} hits #{pronoun} head on the edge of a cement garden bed. 
@@ -179,7 +220,8 @@ end
 module Pt2ch23
     
     def self.text_pt2ch23(name, pronoun)
-        return anim("The man nods, shoulders slumping, he walks wearily down the street towards the park. 
+        return anim("\n
+        The man nods, shoulders slumping, he walks wearily down the street towards the park. 
         #{name} shrugs off the interaction and looks around... 
         #{name} notices a small side street, and hoping to find a short cut, walks towards it. 
         As #{name} enters the side street a pack of rabid dogs come bolting down from the other end, catching #{name} by surprise, they trip backwards and are mauled. 
@@ -208,7 +250,8 @@ end
 module Pt3ch31
     
     def self.text_pt3ch31(name, pronoun)
-        return anim("#{name} fumbles down the street, blindly looking for a letter box or something to help find the place they search for. 
+        return anim("\n
+        #{name} fumbles down the street, blindly looking for a letter box or something to help find the place they search for. 
         Instead, #{pronoun} foot slips and #{name} falls down an open manhole in the road...  
         #{name} HAS DIED. ")
     end
@@ -234,7 +277,8 @@ end
 module Pt3ch32
 
     def self.text_pt3ch32(name, pronoun)
-        return anim("#{name} remembers seeing an old tattered bag back in the park, it's a long shot but perhaps there is a flashlight in there. 
+        return anim("\n
+        #{name} remembers seeing an old tattered bag back in the park, it's a long shot but perhaps there is a flashlight in there. 
         #{name} runs back to check the bag, almost running directly into an old man ... 
         He startles, looking up.. then, like he read their mind, he pulls a flash light from his coat pocket. 
         #{name} smiles at him, and asks if he would be so kind as to guide #{pronoun} back down the dark street. 
@@ -268,7 +312,8 @@ end
 module Pt3ch33
 
     def self.text_pt3ch33(name, pronoun)
-        return puts anim("#{name} walks carefully towards the warehouse, trying to make small steps incase of any rogue man holes that may be lurking... 
+        return puts anim("\n
+        #{name} walks carefully towards the warehouse, trying to make small steps incase of any rogue man holes that may be lurking... 
         #{name} inches closer and closer to the warehouse, arms out in front of #{pronoun} awkwardly pawing at the air. 
         Making out the silouhette of the warehouse #{name} estimates it must be about 100 meters away at this point... 
         Almost at the warehouse, #{name} is pulled back as something catches the sleeve of #{pronoun} coat and yanks them back, 
@@ -299,7 +344,8 @@ end
 module Pt4ch41
 
     def self.text_pt4ch41(name, pronoun)
-        return anim("#{name} decides the man probably knows what he is talking about, and follows the left street. 
+        return anim("\n
+        #{name} decides the man probably knows what he is talking about, and follows the left street. 
         The man hobbles along beside #{name}, still remeniscing about his life, 
         the road winds down for what feels like a long time...
         #{name} asks the man if he notices anything familiar around the area but the man appears not to hear them and continues with his story... 
@@ -328,7 +374,8 @@ end
 module Pt4ch42
 
     def self.text_pt4ch42(name, pronoun)
-        return anim("#{name} decides not to listen to the man and kindly guides him down the street to the right. 
+        return anim("\n
+        #{name} decides not to listen to the man and kindly guides him down the street to the right. 
         It's quite dark but as they continue down the street, the old man pulls out a flashlight, 
         handing it to #{name}. Shining the light around #{name} wonders whether this was the right choice of street, 
         but the thought is cut off as the old man signals with a pointed finger, 'That's my house!'. 
@@ -360,7 +407,8 @@ end
 module Pt5ch51
 
     def self.text_pt5ch51(name, pronoun)
-        return anim("Using the flashlight, #{name} peers down at the piece of paper. 
+        return anim("\n
+        Using the flashlight, #{name} peers down at the piece of paper. 
         Looking up to around the mans house number, #{name} moves slowly backwards, shining the flashlight around to try to find it. 
         There doesn't appear to be one, so #{name} moves onto the next house. 
         Like some sort of sick joke it appears that none of the houses have visible numbers... 
@@ -391,7 +439,8 @@ end
 module Pt5ch52
 
     def self.text_pt5ch52(name, pronoun)
-        return anim("As #{name} starts back towards the street... pausing, #{name} stops and turns back to the old mans house...  
+        return anim("\n
+        As #{name} starts back towards the street... pausing, #{name} stops and turns back to the old mans house...  
         Feeling a little thirsty from the walk, and the cold biting through #{pronoun} jacket, 
         #{name} decides to ask the old man for a glass of water, and maybe for another story. 
         The old man answers the door, there is a fire crackling in the background and #{name} can feel the warmth coming from within. 
