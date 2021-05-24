@@ -37,18 +37,21 @@ class Beginning
             menu.choice "escape down the manhole to your right?"
             menu.choice "run towards the figure?"
             menu.choice "cut through the park, it's dark but atleast it's not that weird figure"
-            menu.choice "EXIT"
+            menu.choice "exit the game"
         #prompt select end
         end
-        #
+        #prompt select directions
         if option == "escape down the manhole to your right?"
-            puts Pt1ch1.text(name, pronoun)
+            puts Pt1ch1.text_pt1ch1(name, pronoun)
+            Pt1ch1.text(name, pronoun)
         elsif option == "run towards the figure?"
-            puts Pt1ch2.text(name, pronoun)
+            puts Pt1ch2.text_pt1ch2(name, pronoun)
+            Pt1ch2.text(name, pronoun)
         elsif option == "cut through the park, it's dark but atleast it's not that weird figure"
-            puts Pt1ch3.text(name, pronoun)
-        elsif option == "EXIT"
-            puts "no"
+            puts Pt1ch3.text_pt1ch3(name, pronoun)
+            Pt1ch3.text(name, pronoun)
+        elsif option == "exit the game"
+            return
         else
         # if/elsif end      
         end

@@ -47,3 +47,4 @@ def congrats
     puts Rainbow("             *        .                                    '").limegreen
     puts Rainbow("Enjoy your three wishes & thanks for playing!!").cornflower
 end
+
