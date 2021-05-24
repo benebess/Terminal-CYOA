@@ -10,16 +10,19 @@ class Beginning
         puts "Welcome to...".colorize(:color => :white, :background => :red)
         #calls title from title.rb
         puts title
-        #game instructions
+        #blank string to make space between title and "welcome to"
+        puts "\n"
+        #GAME instructions
         puts "HOW TO PLAY:".colorize(:color => :white, :background => :red)
-        puts Rainbow("Welcome to TRY NOT TO DIE ... This is a story based game in which YOU, yes you, choose your own fate. 
-        Follow through the story and try to navigate to the end without dying! Please note that this game works best in full screen! ").lightcoral
-        puts " .... ".red
+        puts Rainbow("
+        Welcome to TRY NOT TO DIE ... This is a story based game in which YOU, yes you, choose your own fate. 
+        Follow through the story and try to navigate to the end without dying!").lightcoral
+        puts "\n ***PLEASE NOTE: This game works best in full screen!".light_red
         #asks user for name input
         puts "What should we call you?".magenta
         name = yourname
         #asks user for pronoun input
-        puts Rainbow("Ok, and what is your preferred pronoun? *Her/Their/His?").cornflower
+        puts Rainbow("Ok, #{name}, and what is your preferred pronoun? *her/their/his?").cornflower
         pronoun = yourpronoun
         #greeting
         puts "Alright, #{name}, nice to meet you! Let's get started!".magenta
@@ -61,13 +64,29 @@ class Beginning
 
 #user input for name
 def yourname
-    return gets.chomp
+    yourname = gets.chomp
+    while yourname.length >= 35 
+        puts "Sorry, that's too long, try again".magenta
+    yourname = gets.chomp
+    end
+    return yourname
 #def yourname end
 end
 
+
 #user input for pronoun
 def yourpronoun
-    gets.chomp
+    yourpronoun = gets.chomp
+    if yourpronoun == "her"
+        return yourpronoun
+    elsif yourpronoun == "his"
+        return yourpronoun
+    elsif yourpronoun == "their"
+        return yourpronoun
+    else
+        puts "please use one of the suggested pronouns for grammar reasons :D".magenta
+        yourpronoun = gets.chomp
+    end
 #def pronoun end
 end
 

@@ -2,8 +2,7 @@ require_relative 'list.rb'
 require_relative 'anim'
 require_relative 'asciitext'
 
-#this module presents when start over is selected
-
+#this module presents when "start over" is selected
 module Startover
 
     def self.text_startover(name, pronoun)
@@ -42,7 +41,7 @@ end
 
 # this module presents when the user selects "escape down the manhole to your right?"
 module Pt1ch1
-
+    
     def self.text_pt1ch1(name, pronoun)
         return anim("\n
         #{name} pulls the lid off the manhole and fumbles for the ladder, 
@@ -57,7 +56,7 @@ module Pt1ch1
         puts Rainbow("-------------------------").lightcoral
         # ascii art image appears when death results
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -89,6 +88,7 @@ module Pt1ch2
     end
 
     def self.text(name, pronoun)
+        #divider
         puts Rainbow("-------------------------").lightcoral
         prompt = TTY::Prompt.new
         option = prompt.select("*What would you like to do?") do |menu|
@@ -186,7 +186,7 @@ module Pt2ch21
     end
 end
 
-
+# this module presents when the user selects "say nothing and keep going on your way?"
 module Pt2ch22
     
     def text_pt2ch22(name, pronoun)
@@ -202,7 +202,7 @@ module Pt2ch22
         puts Rainbow("-------------------------").lightcoral
          # ascii art image appears when death results
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -217,6 +217,7 @@ module Pt2ch22
     end
 end
 
+# this module presents when the user selects "politely decline... this guy is creepy"
 module Pt2ch23
     
     def self.text_pt2ch23(name, pronoun)
@@ -232,7 +233,7 @@ module Pt2ch23
         puts Rainbow("-------------------------").lightcoral
         # ascii art image appears when death results
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -247,6 +248,7 @@ module Pt2ch23
     end
 end
 
+# this module presents when the user selects "blindly walk through the street, hoping to find what your looking for?
 module Pt3ch31
     
     def self.text_pt3ch31(name, pronoun)
@@ -259,7 +261,7 @@ module Pt3ch31
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -274,6 +276,7 @@ module Pt3ch31
     end
 end
 
+#this module presents when the user selects "there was a dirty old bag back in the park, maybe it had a flash light? go check?"
 module Pt3ch32
 
     def self.text_pt3ch32(name, pronoun)
@@ -309,6 +312,7 @@ module Pt3ch32
     end
 end
 
+#this module presents when the user selects "check the warehouse, maybe someone is working late?"
 module Pt3ch33
 
     def self.text_pt3ch33(name, pronoun)
@@ -326,7 +330,7 @@ module Pt3ch33
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -341,6 +345,7 @@ module Pt3ch33
     end
 end
 
+#this module presents when the user selects "follow the mans instructions, even if he does seem unsure?"
 module Pt4ch41
 
     def self.text_pt4ch41(name, pronoun)
@@ -356,7 +361,7 @@ module Pt4ch41
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -371,6 +376,7 @@ module Pt4ch41
     end
 end
 
+#this module presents when the user selects "go the other way?"
 module Pt4ch42
 
     def self.text_pt4ch42(name, pronoun)
@@ -404,6 +410,7 @@ module Pt4ch42
     end
 end
 
+# this module presents when the user selects "use the flashlight to find the address on the piece of paper?"
 module Pt5ch51
 
     def self.text_pt5ch51(name, pronoun)
@@ -421,7 +428,7 @@ module Pt5ch51
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).red
+        print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -436,6 +443,7 @@ module Pt5ch51
     end
 end
 
+#this module presents when the user selects "go back and ask the old man for a glass of water, walking is thirsty work"
 module Pt5ch52
 
     def self.text_pt5ch52(name, pronoun)
@@ -456,8 +464,6 @@ module Pt5ch52
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         puts congrats
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/winner.png")
-        print a.to_ascii_art(width: 50)
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
