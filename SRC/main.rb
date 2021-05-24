@@ -57,7 +57,7 @@ class Beginning
 
 #user input for name
 def yourname
-    gets.chomp
+    return gets.chomp
 #def yourname end
 end
 
