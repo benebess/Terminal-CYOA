@@ -12,4 +12,4 @@ describe "test" do
 end
 
 x = yourname
-x.length <= 10
+x.length <= 35
