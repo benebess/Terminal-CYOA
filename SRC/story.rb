@@ -6,7 +6,8 @@ require_relative 'asciitext'
 module Startover
 
     def self.text_startover(name, pronoun)
-        anim("\n 
+        puts nightsky #calling ascii art from ascii textfile
+        return typewriter("\n 
             It was a cold, dark night... 
             A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
             Following instructions scrawled across a ripped piece of paper, given to #{pronoun} by a colleague, #{name} walks down a seemingly quiet and unsuspecting street... 
@@ -43,7 +44,8 @@ end
 module Pt1ch1
     
     def self.text_pt1ch1(name, pronoun)
-        return anim("\n
+        puts falling #calling ascii art from ascii textfile
+        return typewriter("\n
         #{name} pulls the lid off the manhole and fumbles for the ladder, 
         the brisk air has made #{name}'s hands cold and they fail to get a good grip, 
         slipping and falling for what seems like hours... 
@@ -75,7 +77,8 @@ end
 module Pt1ch2
 
     def self.text_pt1ch2(name, pronoun)
-        return anim("\n
+        puts run #calling ascii art from ascii textfile
+        return typewriter("\n
         #{name} has never been one to back down, picking up the pace they run directly towards the figure, 
         the air bites at #{pronoun} cheeks but it doesn't slow them down. 
         The figure stops and watches as #{name} gets closer, hauntingly un-moved by #{name} running toward them... 
@@ -118,7 +121,8 @@ end
 module Pt1ch3
 
     def self.text_pt1ch3(name, pronoun)
-        return anim("\n
+        puts park #calling ascii art from ascii textfile
+        return typewriter("\n
             Looking around,  #{name} see's a park to #{pronoun} left, 
             it's dark and the trees seem almost alive, but it seems better then the unknown at the end of the street.
             #{name} runs into the park and down the cobblestone pathway... 
@@ -158,7 +162,8 @@ end
 module Pt2ch21
     
     def self.text_pt2ch21(name, pronoun)
-        return anim("\n
+        puts forkedroad #calling ascii art from ascii textfile
+        return typewriter("\n
         #{name} smiles at the old man, gesturing to #{pronoun} paper, and says 'Of course, I'm going the same way'. 
         The old man smiles back at #{name}. Walking down the street the man tells #{name} vague stories from his life as #{name} listens intently, 
         the time seems to pass quicker now that #{name} has company and the brisk air doesn't feel as cold anymore... 
@@ -189,8 +194,9 @@ end
 # this module presents when the user selects "say nothing and keep going on your way?"
 module Pt2ch22
     
-    def text_pt2ch22(name, pronoun)
-        return anim("\n
+    def self.text_pt2ch22(name, pronoun)
+        puts car #calling ascii art from ascii textfile
+        return typewriter("\n
             The man watches you walk away, a sad look in his eyes. 
             #{name} turns away and continues down the street... 
             out of nowhere a car appears and slams into #{name}. 
@@ -209,8 +215,7 @@ module Pt2ch22
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -221,7 +226,8 @@ end
 module Pt2ch23
     
     def self.text_pt2ch23(name, pronoun)
-        return anim("\n
+        puts dogs #calling ascii art from ascii textfile
+        return typewriter("\n
         The man nods, shoulders slumping, he walks wearily down the street towards the park. 
         #{name} shrugs off the interaction and looks around... 
         #{name} notices a small side street, and hoping to find a short cut, walks towards it. 
@@ -240,8 +246,7 @@ module Pt2ch23
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -252,7 +257,8 @@ end
 module Pt3ch31
     
     def self.text_pt3ch31(name, pronoun)
-        return anim("\n
+        puts falling #calling ascii art from ascii textfile
+        return typewriter("\n
         #{name} fumbles down the street, blindly looking for a letter box or something to help find the place they search for. 
         Instead, #{pronoun} foot slips and #{name} falls down an open manhole in the road...  
         #{name} HAS DIED. ")
@@ -268,8 +274,7 @@ module Pt3ch31
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -280,7 +285,8 @@ end
 module Pt3ch32
 
     def self.text_pt3ch32(name, pronoun)
-        return anim("\n
+        puts park #calling ascii art from ascii textfile
+        return typewriter("\n
         #{name} remembers seeing an old tattered bag back in the park, it's a long shot but perhaps there is a flashlight in there. 
         #{name} runs back to check the bag, almost running directly into an old man ... 
         He startles, looking up.. then, like he read their mind, he pulls a flash light from his coat pocket. 
@@ -316,7 +322,8 @@ end
 module Pt3ch33
 
     def self.text_pt3ch33(name, pronoun)
-        return puts anim("\n
+        puts warehouse
+        return typewriter("\n
         #{name} walks carefully towards the warehouse, trying to make small steps incase of any rogue man holes that may be lurking... 
         #{name} inches closer and closer to the warehouse, arms out in front of #{pronoun} awkwardly pawing at the air. 
         Making out the silouhette of the warehouse #{name} estimates it must be about 100 meters away at this point... 
@@ -337,8 +344,7 @@ module Pt3ch33
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -349,7 +355,7 @@ end
 module Pt4ch41
 
     def self.text_pt4ch41(name, pronoun)
-        return anim("\n
+        return typewriter("\n
         #{name} decides the man probably knows what he is talking about, and follows the left street. 
         The man hobbles along beside #{name}, still remeniscing about his life, 
         the road winds down for what feels like a long time...
@@ -368,8 +374,7 @@ module Pt4ch41
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -380,7 +385,7 @@ end
 module Pt4ch42
 
     def self.text_pt4ch42(name, pronoun)
-        return anim("\n
+        return typewriter("\n
         #{name} decides not to listen to the man and kindly guides him down the street to the right. 
         It's quite dark but as they continue down the street, the old man pulls out a flashlight, 
         handing it to #{name}. Shining the light around #{name} wonders whether this was the right choice of street, 
@@ -414,7 +419,7 @@ end
 module Pt5ch51
 
     def self.text_pt5ch51(name, pronoun)
-        return anim("\n
+        return typewriter("\n
         Using the flashlight, #{name} peers down at the piece of paper. 
         Looking up to around the mans house number, #{name} moves slowly backwards, shining the flashlight around to try to find it. 
         There doesn't appear to be one, so #{name} moves onto the next house. 
@@ -435,8 +440,7 @@ module Pt5ch51
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
@@ -447,7 +451,7 @@ end
 module Pt5ch52
 
     def self.text_pt5ch52(name, pronoun)
-        return anim("\n
+        return typewriter("\n
         As #{name} starts back towards the street... pausing, #{name} stops and turns back to the old mans house...  
         Feeling a little thirsty from the walk, and the cold biting through #{pronoun} jacket, 
         #{name} decides to ask the old man for a glass of water, and maybe for another story. 
@@ -470,8 +474,7 @@ module Pt5ch52
             menu.choice "exit the game"
         end
         if option == "start over"
-            puts Pt1ch1.text_pt1ch1(name, pronoun)
-            Pt1ch1.text(name, pronoun)
+            puts Startover.text_startover(name, pronoun)
         else option == "exit the game"
             return
         end
