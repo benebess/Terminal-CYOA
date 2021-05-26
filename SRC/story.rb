@@ -43,14 +43,15 @@ end
 # this module presents when the user selects "escape down the manhole to your right?"
 module Pt1ch1
     
+    
     def self.text_pt1ch1(name, pronoun)
         puts falling #calling ascii art from ascii textfile
         return typewriter("\n
-        #{name} pulls the lid off the manhole and fumbles for the ladder, 
-        the brisk air has made #{name}'s hands cold and they fail to get a good grip, 
-        slipping and falling for what seems like hours... 
-        then the cold harsh slam of #{name}'s body echoes through the quiet streets above. 
-        #{name} HAS DIED.")
+            #{name} pulls the lid off the manhole and fumbles for the ladder, 
+            the brisk air has made #{name}'s hands cold and they fail to get a good grip, 
+            slipping and falling for what seems like hours... 
+            then the cold harsh slam of #{name}'s body echoes through the quiet streets above. 
+            #{name} HAS DIED.")
     end
 
     def self.text(name, pronoun)
