@@ -21,30 +21,8 @@ I wanted to develop this application to provide a simple and fun way to enjoy a 
 
 ## 4. **Explain** how a member of the target audience will use it:
 
-"Hello and thank you for being interested in downloading my application: Try Not To Die. The following is a detailed instruction manual on how to get, and play, my game. 
-
-First of all you will need to clone my application from my repository, found here: [Try Not To Die](https://github.com/benebess/BenedictePowell_T1A3) 
-To clone the repo to your computer, you will need to open your command line application, navigate to where you'd like the files to live on your computer and type the following: 
-``` git clone git@github.com:benebess/BenedictePowell_T1A3.git```
-
-Once that is cloned, navigate through the BenedictePowell_T1A3 folder and into the one entitled SRC, then you can move onto the next step. 
-
-The following gems are required by my application, to add them you will need to have bundler which you can install by typing ``` gem install bundler``` 
-Once that is successfully installed, you only need to run ``` bundle install ``` in the command line which will bundle install all of the gems required. 
-
-*gem 'tty-prompt', '~> 0.23.1'*
-*gem 'colorize', '~> 0.8.1'*
-*gem 'rainbow', '~> 3.0'*
-*gem 'asciiart', '~> 0.0.10'*
-*gem 'artii', '~> 2.1', '>= 2.1.2'*
-
-Once all this is completed, and you are still in the SRC folder in the command line, you can run ```ruby main.rb```
-
-This will begin the game and you can start playing! 
-
-~ Happy adventuring! "
-
-
+This app would be used by the target audience to entertain, cure that pesky boredom and be something they show their friends. 
+Eventually there could be room to allow the target audience to submit potential stories to be placed inside the game, allowing for more user interaction. 
 
 # **Develop** a list of features that will be included in the application.
 
@@ -88,7 +66,25 @@ Flow chart with features added:
 
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
-You must include:
-\- steps to install the application
-\- any dependencies required by the application to operate
-\- any system/hardware requirements
+"Hello and thank you for being interested in downloading my application: Try Not To Die. The following is a detailed instruction manual on how to get, and play, my game. 
+
+First of all you will need to clone my application from my repository, found here: [Try Not To Die](https://github.com/benebess/BenedictePowell_T1A3) 
+To clone the repo to your computer, you will need to open your command line application, navigate to where you'd like the files to live on your computer and type the following: 
+``` git clone git@github.com:benebess/BenedictePowell_T1A3.git```
+
+Once that is cloned, navigate through the BenedictePowell_T1A3 folder and into the one entitled SRC, then you can move onto the next step. 
+
+The following gems are required by my application, to add them you will need to have bundler which you can install by typing ``` gem install bundler``` 
+Once that is successfully installed, you only need to run ``` bundle install ``` in the command line which will bundle install all of the gems required. 
+
+*gem 'tty-prompt', '~> 0.23.1'*
+*gem 'colorize', '~> 0.8.1'*
+*gem 'rainbow', '~> 3.0'*
+*gem 'asciiart', '~> 0.0.10'*
+*gem 'artii', '~> 2.1', '>= 2.1.2'*
+
+Once all this is completed, and you are still in the SRC folder in the command line, you can run ```ruby main.rb```
+
+This will begin the game and you can start playing! 
+
+~ Happy adventuring! "

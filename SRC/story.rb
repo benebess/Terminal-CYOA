@@ -7,6 +7,7 @@ module Startover
 
     def self.text_startover(name, pronoun)
         puts nightsky #calling ascii art from ascii textfile
+        #typewriter used to make text type out
         return typewriter("\n 
             It was a cold, dark night... 
             A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
@@ -267,6 +268,7 @@ module Pt3ch31
 
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
+         # ascii art image appears when death results
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
         print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
@@ -323,7 +325,7 @@ end
 module Pt3ch33
 
     def self.text_pt3ch33(name, pronoun)
-        puts warehouse
+        puts warehouse # calling ascii art from ascii textfile
         return typewriter("\n
         #{name} walks carefully towards the warehouse, trying to make small steps incase of any rogue man holes that may be lurking... 
         #{name} inches closer and closer to the warehouse, arms out in front of #{pronoun} awkwardly pawing at the air. 
@@ -356,6 +358,7 @@ end
 module Pt4ch41
 
     def self.text_pt4ch41(name, pronoun)
+        puts falling #calling ascii art from ascii textfile
         return typewriter("\n
         #{name} decides the man probably knows what he is talking about, and follows the left street. 
         The man hobbles along beside #{name}, still remeniscing about his life, 
@@ -386,6 +389,7 @@ end
 module Pt4ch42
 
     def self.text_pt4ch42(name, pronoun)
+        puts house #calling ascii art from ascii textfile
         return typewriter("\n
         #{name} decides not to listen to the man and kindly guides him down the street to the right. 
         It's quite dark but as they continue down the street, the old man pulls out a flashlight, 
@@ -420,6 +424,7 @@ end
 module Pt5ch51
 
     def self.text_pt5ch51(name, pronoun)
+        puts falling #calling ascii art from ascii textfile
         return typewriter("\n
         Using the flashlight, #{name} peers down at the piece of paper. 
         Looking up to around the mans house number, #{name} moves slowly backwards, shining the flashlight around to try to find it. 
@@ -433,6 +438,7 @@ module Pt5ch51
 
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
+         # ascii art image appears when death results
         a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
         print a.to_ascii_art(width: 50).light_red
         prompt = TTY::Prompt.new
@@ -452,6 +458,7 @@ end
 module Pt5ch52
 
     def self.text_pt5ch52(name, pronoun)
+        puts house #calling ascii art from ascii textfile
         return typewriter("\n
         As #{name} starts back towards the street... pausing, #{name} stops and turns back to the old mans house...  
         Feeling a little thirsty from the walk, and the cold biting through #{pronoun} jacket, 
@@ -468,6 +475,7 @@ module Pt5ch52
 
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
+        # calling ascii art from ascii textfile
         puts congrats
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|

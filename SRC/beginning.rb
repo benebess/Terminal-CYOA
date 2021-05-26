@@ -23,6 +23,7 @@ class Beginning
         puts "Alright, #{name}, nice to meet you! Let's get started!".magenta
         puts "..."
         #beginning of the story
+        #nightsky is ascii art for story beginning
         puts nightsky
         typewriter("\n
         It was a cold, dark night... 

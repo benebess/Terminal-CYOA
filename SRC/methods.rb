@@ -5,6 +5,7 @@ def yourname(is_test, test_string)
         return yourname
     else 
         yourname = gets.chomp
+        #limit name to 35 letters or less
         begin
         while yourname.length >= 35 
             puts "Sorry, that's too long, try again".magenta
@@ -25,6 +26,7 @@ def yourpronoun(is_test, test_string)
         yourpronoun = test_string
         return yourpronoun
     else
+        #limits users input for grammatical reasons
         yourpronoun = gets.chomp
         if yourpronoun == "her"
             return yourpronoun
