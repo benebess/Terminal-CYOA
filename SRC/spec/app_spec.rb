@@ -9,6 +9,7 @@ end
 
 
 #test that the user input for name will be less than 35 letters
+
 describe "yourname" do 
     it "should be able to check the name length of user name input is less than 35" do
       name = yourname(true, "Teej")
@@ -17,6 +18,12 @@ describe "yourname" do
     end
 end
 
+# test that checks the user has entered the correct pronoun
 
 describe "yourpronoun" do
-  it "should be able to gi"
+  it "should limit the user response to his/her/their pronouns" do
+    pronoun = yourpronoun(true, "her")
+    actual_value = "her"
+    expect(actual_value).to be(true)
+  end
+end
