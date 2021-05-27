@@ -21,13 +21,24 @@ Once you are in this file you will need to install the gems that my application 
 If that has successfully installed, you can then bundle install all my applications gems, simply copy and paste this: 
 ``` bundle install```
 these are the gems you will be installing by typing bundle install: 
+
 *gem 'tty-prompt', '~> 0.23.1'*
+
 *gem 'colorize', '~> 0.8.1'*
+
 *gem 'rainbow', '~> 3.0'*
+
 *gem 'asciiart', '~> 0.0.10'*
+
 *gem 'artii', '~> 2.1', '>= 2.1.2'*
 
+if there are any issues with the bundle install you can individually install each gem as such: 
 
+```gem install tty-prompt```
+```gem install colorize```
+```gem install rainbow```
+```gem install asciiart```
+```gem install artii```
 
 If you are using a mac, once you have the gems set up you can run: 
 ```./run_app.sh```
