@@ -101,4 +101,5 @@ You can find installation instructions here: [HELP DOC](https://github.com/beneb
 [For typewriter effect](https://www.youtube.com/watch?v=y-NNN1i9_rg) 
 [Modules](http://ruby-for-beginners.rubymonstas.org/advanced/modules.html#:~:text=In%20Ruby%2C%20modules%20are%20somewhat,not%20have%20a%20method%20new%20.)
 [Windows Linux SH](https://www.thewindowsclub.com/how-to-run-sh-or-shell-script-file-in-windows-10) 
+[Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 
