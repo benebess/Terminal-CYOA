@@ -12,7 +12,10 @@ class Beginning
         puts Rainbow("
         Welcome to TRY NOT TO DIE ... This is a story based game in which YOU, yes you, choose your own fate. 
         Follow through the story and try to navigate to the end without dying!").lightcoral
-        puts "\n ***PLEASE NOTE: This game works best in full screen!".light_red
+        puts "\n 
+        ***PLEASE NOTE: This game works best in full screen!".light_red
+        puts "" #break between 
+        puts "" #break between
         #asks user for name input
         puts "What should we call you?".magenta
         name = yourname(false, "")
@@ -20,7 +23,7 @@ class Beginning
         puts Rainbow("Ok, #{name}, and what is your preferred pronoun? *her/their/his?").cornflower
         pronoun = yourpronoun(false, "")
         #greeting
-        puts "Alright, #{name}, nice to meet you! Let's get started!".magenta
+        puts typewriter("Alright, #{name}, nice to meet you! Let's get started!".magenta)
         puts "..."
         #beginning of the story
         #nightsky is ascii art for story beginning
