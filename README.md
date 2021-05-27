@@ -23,6 +23,8 @@ I wanted to develop this application to provide a simple and fun way to enjoy a 
 
 This app would be used by the target audience to entertain, cure that pesky boredom and be something they show their friends. 
 Eventually there could be room to allow the target audience to submit potential stories to be placed inside the game, allowing for more user interaction. 
+Once the application is installed on their computer, following my installation instructions later on in this readme file, the can start to play the application. The app starts with a title screen, and breif instructions on how to play. This will then be followed by a prompt for the user to enter their name. If they enter something that is too long (more then 35 letters) they will be asked to try again by the application. This is then followed by user input for their pronoun, they must enter either her, his or their, otherwise the application will ask them to try again. The app will then begin the first segment of the story. 
+After the first segment has been printed to the screen, a list of options will appear (tty-prompt) for the user to select one that will then take them to the corresponding story segment. This will continue until they either die - in which case they are prompted to either start over, or exit the game. Or, they win, in which case they will see the winning message and are able to either begin again or exit the game. 
 
 # **Develop** a list of features that will be included in the application.
 
@@ -66,7 +68,8 @@ Flow chart with features added:
 
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
-"Hello and thank you for being interested in downloading my application: Try Not To Die. The following is a detailed instruction manual on how to get, and play, my game. 
+"Hello and thank you for being interested in downloading my application: Try Not To Die. 
+The following is a detailed instruction manual on how to get, install and play my game. 
 
 First of all you will need to clone my application from my repository, found here: [Try Not To Die](https://github.com/benebess/BenedictePowell_T1A3) 
 To clone the repo to your computer, you will need to open your command line application, navigate to where you'd like the files to live on your computer and type the following: 
@@ -83,7 +86,7 @@ Once that is successfully installed, you only need to run ``` bundle install ```
 *gem 'asciiart', '~> 0.0.10'*
 *gem 'artii', '~> 2.1', '>= 2.1.2'*
 
-Once all this is completed, and you are still in the SRC folder in the command line, you can run ```ruby main.rb```
+Once all this is completed, and you are still in the SRC folder in the command line, you can run ```./run_app.sh```
 
 This will begin the game and you can start playing! 
 

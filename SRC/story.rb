@@ -11,7 +11,8 @@ module Startover
         return typewriter("\n 
             It was a cold, dark night... 
             A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
-            Following instructions scrawled across a ripped piece of paper, given to #{pronoun} by a colleague, #{name} walks down a seemingly quiet and unsuspecting street... 
+            Following instructions scrawled across a ripped piece of paper, given to #{name} by a colleague, 
+            #{name} walks down a seemingly quiet and unsuspecting street... 
             In the distance, a figure is seen, illuminated by the street lights behind them...")
             #divider
             puts Rainbow("------------------").lightcoral

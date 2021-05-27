@@ -23,7 +23,7 @@ end
 describe "yourpronoun" do
   it "should limit the user response to his/her/their pronouns" do
     pronoun = yourpronoun(true, "her")
-    actual_value = "her"
+    actual_value = pronoun
     expect(actual_value).to be(true)
   end
 end
