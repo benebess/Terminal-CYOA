@@ -1,13 +1,6 @@
 require_relative '../methods'
 require_relative '../story'
 
-def setup
-    before(:each) do
-      @beginning = Beginning.new
-    end
-end
-
-
 #test number one -  tests whether the user input for name will be less than 35 letters
 
 describe "yourname" do 
@@ -22,8 +15,7 @@ end
 
 describe "yourpronoun" do
   it "should limit the user response to his/her/their pronouns" do
-    pronoun = yourpronoun(true)
-    actual_value = pronoun
-    expect(actual_value).to be(true)
+    pronoun = yourpronoun(true, "her")
+    expect(pronoun).to eq("her")
   end
-endc
+end

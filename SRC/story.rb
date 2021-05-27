@@ -8,7 +8,7 @@ module Startover
     def self.text_startover(name, pronoun)
         puts nightsky #calling ascii art from ascii textfile
         #typewriter used to make text type out
-        return typewriter("\n 
+        puts typewriter("\n 
             It was a cold, dark night... 
             A brisk breeze cuts through #{name}'s woolen coat and sends a shiver down #{pronoun} back. 
             Following instructions scrawled across a ripped piece of paper, given to #{name} by a colleague, 
@@ -60,8 +60,7 @@ module Pt1ch1
         #divider
         puts Rainbow("-------------------------").lightcoral
         # ascii art image appears when death results
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -210,8 +209,7 @@ module Pt2ch22
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
          # ascii art image appears when death results
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -241,8 +239,7 @@ module Pt2ch23
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         # ascii art image appears when death results
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -270,8 +267,7 @@ module Pt3ch31
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
          # ascii art image appears when death results
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -340,8 +336,7 @@ module Pt3ch33
 
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -371,8 +366,7 @@ module Pt4ch41
 
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -440,8 +434,7 @@ module Pt5ch51
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
          # ascii art image appears when death results
-        a = AsciiArt.new("/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/skullbones.png")
-        print a.to_ascii_art(width: 50).light_red
+        puts death
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
             menu.choice "start over"
@@ -477,6 +470,7 @@ module Pt5ch52
     def self.text(name, pronoun)
         puts Rainbow("-------------------------").lightcoral
         # calling ascii art from ascii textfile
+        puts winner
         puts congrats
         prompt = TTY::Prompt.new
         option = prompt.select("* What would you like to do?") do |menu|
