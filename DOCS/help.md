@@ -12,7 +12,10 @@ First you will need to clone my repo!
 Navigate in the command line to where you would like this file to be kept on your computer and then you can copy and paste this into your command line: 
 ```git clone git@github.com:benebess/BenedictePowell_T1A3.git```
 
-Once the repo has successfully installed, use the command line to navigate to the src folder, you can copy and paste this: 
+Once the repo has successfully installed, use the command line to navigate to the  parent folder entitled, BenedictePowell_T1A3: 
+```cd BenedictePowell_T1A3```
+
+then navigate to the src folder, you can copy and paste this: 
 ```cd src```
 
 Once you are in this file you will need to install the gems that my application requires! If you haven't already, you will need to install bundler. Copy and paste this into your command line: 
