@@ -82,16 +82,6 @@ Flow chart with features added:
 
 
 
-
-
-
-
-
-
-
-
-
-
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
 You can find installation instructions here: [HELP DOC](https://github.com/benebess/BenedictePowell_T1A3/blob/master/DOCS/help.md)
@@ -106,3 +96,5 @@ You can find installation instructions here: [HELP DOC](https://github.com/beneb
 
 [Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/)
 
+
+~ other things to note : I mention in my slide deck that i use AsciiArt which is a gem, but i have since removed that from my application as it was causing errors. 
