@@ -47,11 +47,11 @@ Once chosen, using IF/ELSE statements again, the application will then direct th
 
 Basic flow chart of my application:
 
-![1stbasic](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Flow Charts/1stbasic.png)
+![1stbasic](https://github.com/benebess/BenedictePowell_T1A3/blob/master/DOCS/Flow%20Charts/1stbasic.png)
 
 Flow chart with features added: 
 
-![2ndindepth](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Flow Charts/2ndindepth.png)
+![2ndindepth](https://github.com/benebess/BenedictePowell_T1A3/blob/master/DOCS/Flow%20Charts/2ndindepth.png)
 
 # **Develop** an implementation plan:
 
