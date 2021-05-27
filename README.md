@@ -77,4 +77,5 @@ Flow chart with features added:
 
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
-[Help Doc]()
+You can find installation instructions here: [HELP DOC](https://github.com/benebess/BenedictePowell_T1A3/blob/master/DOCS/help.md)
+
