@@ -1,6 +1,7 @@
-# **Link to source control repository:**
+# [TRY NOT TO DIE](https://github.com/benebess/BenedictePowell_T1A3)
 
-[Try Not To Die - Benedicte Powell T1A3](https://github.com/benebess/BenedictePowell_T1A3)
+Click the link above to find my repo! 
+Created by Benedicte Powell. 
 
 # **Software Development Plan:** 
 
@@ -39,55 +40,41 @@ After the first segment has been printed to the screen, a list of options will a
 
 The game will begin, a title and instructions will appear, followed by a prompt to get the user to input their name, this will be followed by a prompt for them to enter their preferred pronoun. 
 If the user enters a name that is over 35 letters, they will be met with a friendly message to try again, the same goes for if they enter a pronoun other than "her", "his", "their", another friendly message will appear and then they will be able to try again. This is implementing the IF/ELSE Statements, and also While Loops, and this will handle any user input errors. 
-Once the story starts, after the initial segment the user will be met with two-three options to choose from, using TTY-Prompt to limit their input and make the application easier to manage. 
-Once chosen, using IF/ELSE statements again, the application will then direct the user to the next story segment. If they die during the story, TTY-Prompt will ask the user whether they would like to start again, or exit the game. If they choose to start again, it will take them back to the beginning story segment, but skip the part where they need to input their name/pronoun to eliminate the user having to enter their info again. 
+Once the story starts, after the initial segment the user will be met with two to three options to choose from, using TTY-Prompt to limit their input and make the application easier to manage. 
+Once chosen, using IF/ELSE statements again, the application will then direct the user to the next story segment. If they die during the story, TTY-Prompt will ask the user whether they would like to start again, or exit the game. If they choose to start again, it will take them back to the beginning story segment, but skip the part where they need to input their name/pronoun to eliminate the user having to enter their info again, and if they win, it will lead them to the winning page. 
 
 # **Develop** a diagram which describes the control flow of your application. 
 
 Basic flow chart of my application:
 
-![](/Users/bonepile/Desktop/Screen Shot 2021-05-26 at 4.10.00 pm.png)
+![1stbasic](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Flow Charts/1stbasic.png)
 
 Flow chart with features added: 
 
-![](/Users/bonepile/Downloads/Untitled Diagram.png)
+![2ndindepth](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Flow Charts/2ndindepth.png)
 
 # **Develop** an implementation plan:
 
-![1](/Users/bonepile/Desktop/1.png)
+![1](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/1.png)
 
-![2](/Users/bonepile/Desktop/2.png)
+![3](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/3.png)
 
-![3](/Users/bonepile/Desktop/3.png)
+![4](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/4.png)
 
-![6](/Users/bonepile/Desktop/6.png)
+![5](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/5.png)
 
-![before final](/Users/bonepile/Desktop/before final.png)
+![6](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/6.png)
 
-![final](/Users/bonepile/Desktop/final.png)
+![7](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/7.png)
+
+![8](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/8.png)
+
+![9](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/9.png)
+
+![10](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/10.png)
+
+![11](/Users/bonepile/Desktop/BenedictePowell_T1A3/DOCS/Trello/11.png)
 
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
-"Hello and thank you for being interested in downloading my application: Try Not To Die. 
-The following is a detailed instruction manual on how to get, install and play my game. 
-
-First of all you will need to clone my application from my repository, found here: [Try Not To Die](https://github.com/benebess/BenedictePowell_T1A3) 
-To clone the repo to your computer, you will need to open your command line application, navigate to where you'd like the files to live on your computer and type the following: 
-``` git clone git@github.com:benebess/BenedictePowell_T1A3.git```
-
-Once that is cloned, navigate through the BenedictePowell_T1A3 folder and into the one entitled SRC, then you can move onto the next step. 
-
-The following gems are required by my application, to add them you will need to have bundler which you can install by typing ``` gem install bundler``` 
-Once that is successfully installed, you only need to run ``` bundle install ``` in the command line which will bundle install all of the gems required. 
-
-*gem 'tty-prompt', '~> 0.23.1'*
-*gem 'colorize', '~> 0.8.1'*
-*gem 'rainbow', '~> 3.0'*
-*gem 'asciiart', '~> 0.0.10'*
-*gem 'artii', '~> 2.1', '>= 2.1.2'*
-
-Once all this is completed, and you are still in the SRC folder in the command line, you can run ```./run_app.sh```
-
-This will begin the game and you can start playing! 
-
-~ Happy adventuring! "
+[Help Doc]()
