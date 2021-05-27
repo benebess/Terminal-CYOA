@@ -24,7 +24,7 @@ I wanted to develop this application to provide a simple and fun way to enjoy a 
 
 This app would be used by the target audience to entertain, cure that pesky boredom and be something they show their friends. 
 Eventually there could be room to allow the target audience to submit potential stories to be placed inside the game, allowing for more user interaction. 
-Once the application is installed on their computer, following my installation instructions later on in this readme file, the can start to play the application. The app starts with a title screen, and breif instructions on how to play. This will then be followed by a prompt for the user to enter their name. If they enter something that is too long (more then 35 letters) they will be asked to try again by the application. This is then followed by user input for their pronoun, they must enter either her, his or their, otherwise the application will ask them to try again. The app will then begin the first segment of the story. 
+Once the application is installed on their computer, following my installation instructions later on in this readme file, the can start to play the application. The app starts with a title screen, and brief instructions on how to play. This will then be followed by a prompt for the user to enter their name. If they enter something that is too long (more then 35 letters) they will be asked to try again by the application. This is then followed by user input for their pronoun, they must enter either her, his or their, otherwise the application will ask them to try again. The app will then begin the first segment of the story. 
 After the first segment has been printed to the screen, a list of options will appear (tty-prompt) for the user to select one that will then take them to the corresponding story segment. This will continue until they either die - in which case they are prompted to either start over, or exit the game. Or, they win, in which case they will see the winning message and are able to either begin again or exit the game. 
 
 # **Develop** a list of features that will be included in the application.
@@ -39,7 +39,7 @@ After the first segment has been printed to the screen, a list of options will a
 # **Develop** an **outline** of the user interaction and experience for the application.
 
 The game will begin, a title and instructions will appear, followed by a prompt to get the user to input their name, this will be followed by a prompt for them to enter their preferred pronoun. 
-If the user enters a name that is over 35 letters, they will be met with a friendly message to try again, the same goes for if they enter a pronoun other than "her", "his", "their", another friendly message will appear and then they will be able to try again. This is implementing the IF/ELSE Statements, and also While Loops, and this will handle any user input errors. 
+If the user enters a name that is over 35 letters, they will be met with a friendly message to try again, the same goes for if they enter a pronoun other than "her", "his", "their", another friendly message will appear and then they will be able to try again - this is implementing the IF/ELSE Statements, and also While Loops, and this will handle any user input errors. 
 Once the story starts, after the initial segment the user will be met with two to three options to choose from, using TTY-Prompt to limit their input and make the application easier to manage. 
 Once chosen, using IF/ELSE statements again, the application will then direct the user to the next story segment. If they die during the story, TTY-Prompt will ask the user whether they would like to start again, or exit the game. If they choose to start again, it will take them back to the beginning story segment, but skip the part where they need to input their name/pronoun to eliminate the user having to enter their info again, and if they win, it will lead them to the winning page. 
 
@@ -78,4 +78,9 @@ Flow chart with features added:
 # **Design** help documentation which includes a set of instructions which accurately **describe** how to use and install the application.
 
 You can find installation instructions here: [HELP DOC](https://github.com/benebess/BenedictePowell_T1A3/blob/master/DOCS/help.md)
+
+# Referenced sources: 
+
+[For typewriter effect](https://www.youtube.com/watch?v=y-NNN1i9_rg) 
+[Modules](http://ruby-for-beginners.rubymonstas.org/advanced/modules.html#:~:text=In%20Ruby%2C%20modules%20are%20somewhat,not%20have%20a%20method%20new%20.)
 
