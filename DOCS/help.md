@@ -31,8 +31,6 @@ these are the gems you will be installing by typing bundle install:
 
 *gem 'rainbow', '~> 3.0'*
 
-*gem 'asciiart', '~> 0.0.10'*
-
 *gem 'artii', '~> 2.1', '>= 2.1.2'*
 
 if there are any issues with the bundle install you can individually install each gem as such: 
@@ -40,7 +38,6 @@ if there are any issues with the bundle install you can individually install eac
 ```gem install tty-prompt```
 ```gem install colorize```
 ```gem install rainbow```
-```gem install asciiart```
 ```gem install artii```
 
 If you are using a mac, once you have the gems set up you can run: 
