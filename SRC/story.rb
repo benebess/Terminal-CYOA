@@ -227,7 +227,7 @@ end
 module Pt2ch23
     
     def self.text_pt2ch23(name, pronoun)
-        puts dogs #calling ascii art from ascii textfile
+        puts dog #calling ascii art from ascii textfile
         return typewriter("\n
         The man nods, shoulders slumping, he walks wearily down the street towards the park. 
         #{name} shrugs off the interaction and looks around... 
